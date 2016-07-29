@@ -11,8 +11,8 @@ def getMetaData():
         {
             "name": "Convert to Metric",
             "author": "Jaime van Kessel",
-            "version": "2.2",
-            "api": 3,
+            "version": "2.1",
+            "api": 2,
             "description": i18n_catalog.i18nc("Description of plugin","This extension quickly converts models drawn in inches to metric values.")
         }
     }
