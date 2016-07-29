@@ -3,9 +3,9 @@ from UM.Scene.Selection import Selection
 from UM.Math.Vector import Vector
 
 from UM.i18n import i18nCatalog
-i18n_catalog = i18nCatalog("BarbarianPlugin")
+i18n_catalog = i18nCatalog("MetricScalePlugin")
 
-class BarbarianPlugin(Extension):
+class MetricScale(Extension):
     def __init__(self):
         super().__init__()
         self.addMenuItem(i18n_catalog.i18n("Convert to metric"), self.convertToMetric)
