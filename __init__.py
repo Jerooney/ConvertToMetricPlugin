@@ -3,19 +3,19 @@
 
 from . import BarbarianPlugin
 from UM.i18n import i18nCatalog
-i18n_catalog = i18nCatalog("BarbarianPlugin")
+i18n_catalog = i18nCatalog("MetricScalePlugin")
 def getMetaData():
     return {
         "type": "extension",
         "plugin":
         {
-            "name": "Barbarian plugin",
+            "name": "Metric Scale plugin",
             "author": "Jaime van Kessel",
             "version": "2.2",
             "api": 3,
-            "description": i18n_catalog.i18nc("Description of plugin","Extension that allows to quickly convert models in inches to metric")
+            "description": i18n_catalog.i18nc("Description of plugin","This extension quickly converts models drawn in inches to metric values.")
         }
     }
 
 def register(app):
-    return { "extension": BarbarianPlugin.BarbarianPlugin()}
+    return { "extension": MetricScalePlugin.MetricScalePlugin()}
